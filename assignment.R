@@ -23,6 +23,6 @@ my_data2 <- my_data |>
 # сколько произведений Шекспира и Марлоу хранится в библиотеке Gutenberg
 # новый столбец должен называться n, не делайте сортировку 
 my_data3 <- my_data2 |>
-  filter(author == 'Shakespare' | author == 'Marlowe') |>
+  filter(author == 'Shakespeare' | author == 'Marlowe') |>
   group_by(author) |>
-  sumarise(n = n())
+  summarise(n = n())
